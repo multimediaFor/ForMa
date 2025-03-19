@@ -2,7 +2,7 @@
 An official implementation code for paper "[A Lightweight and Effective Image Tampering Localization Network with Vision Mamba.](https://arxiv.org/abs/)". This repo provide codes and trained weights.
 ## Framework
 <p align='center'>  
-  <img src='./images/ForMa_network.png' width='900'/>
+  <img src='./ForMa_Network.png' width='900'/>
 </p>
 
 ## Dependency
