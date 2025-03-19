@@ -1,0 +1,19 @@
+type: train
+flist_path: 'flist/'
+cuda_idx: 0
+mode:
+input_size: 512
+gt_ratio: 1
+train_bs: 8
+test_bs: 8
+save_res: 0
+gpu: 0
+metric: consine
+path_gt:
+nickname:
+path_input:
+path_out: results/output/
+out_dir: pixelshuf
+
+
+
