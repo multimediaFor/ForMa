@@ -9,7 +9,7 @@ import torch
 import numpy as np
 import torch.nn.functional as F
 from PIL import Image
-from models.vmamba_no_prompt_pixelshuf_modals import Prompt_Vmamba
+from models.vmamba_pixelshuf_modals import Forensic_Vmamba
 from metric import calc_fixed_f1_iou
 import datetime
 
@@ -38,7 +38,7 @@ device = torch.device('cuda:{}'.format(args.gpu))
 class MyVmamba(nn.Module):
     def __init__(self):
         super(MyVmamba, self).__init__()
-        self.cur_net = Prompt_Vmamba().to(device)
+        self.cur_net = Forensic_Vmamba().to(device)
         self.load(self.cur_net, args.weight_path)
 
     def process(self, Ii):
