@@ -16,7 +16,7 @@ An official implementation code for paper "[A Lightweight and Effective Image Ta
 ## Usage
 
 For example to test:
-download [ForMa.pth](https://pan.baidu.com/s/1A8DrM4KD5iz5bKFAN5XFdw?pwd=1234)
+download [ForMa.pth](https://pan.baidu.com/s/1A8DrM4KD5iz5bKFAN5XFdw?pwd=1234) and place it in the `weights/` directory.
 ```
 python generate_npy.py
 python test.py 
