@@ -18,7 +18,7 @@ logger.basicConfig(level=logger.INFO,
                    datefmt='%m-%d %H:%M:%S')
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--weight_path', type=str, default='./Prompt_Vmamba_weights_0.6016.pth',
+parser.add_argument('--weight_path', type=str, default='./weights/ForMa_weights.pth',
                     help='weight path of trained model')
 parser.add_argument('--input_size', type=int, default=512, help='size of resized input')
 parser.add_argument('--gt_ratio', type=int, default=1, help='resolution of input / output')
@@ -54,31 +54,25 @@ class MyVmamba(nn.Module):
         missing_layers = []
         mismatched_shapes = []
 
-        # 遍历加载的权重字典
         for name, param in weights.items():
             if name in model_state_dict:
                 if param.shape == model_state_dict[name].shape:
-                    model_state_dict[name].copy_(param)  # 更新模型的权重
+                    model_state_dict[name].copy_(param)  
                     loaded_layers.append(name)
                 else:
                     mismatched_shapes.append(name)
             else:
-                # 如果模型中没有该层，记录缺失的层
                 missing_layers.append(name)
 
-        # 打印加载成功的层
         if loaded_layers:
             logger.info(f"Successfully loaded the following layers: {', '.join(loaded_layers)}")
 
-        # 打印形状不匹配的层
         if mismatched_shapes:
             logger.warning(f"The following layers have mismatched shapes: {', '.join(mismatched_shapes)}")
 
-        # 打印缺失的层
         if missing_layers:
             logger.warning(f"The following layers are missing in the model: {', '.join(missing_layers)}")
 
-        # 如果都加载成功，打印成功信息
         if not mismatched_shapes and not missing_layers:
             logger.info("All layers have been successfully loaded!")
 
