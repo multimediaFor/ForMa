@@ -27,8 +27,8 @@ If you use this code for your research, please cite our paper
 ```
 @article{guo2025light,
   title={A Lightweight and Effective Image Tampering Localization Network with Vision Mamba},
-  author={Guo, Kun and Cao, Gang},
-  journal={arXiv preprint arXiv:2502.09941},
+  author={Guo, Kun, et al.},
+  journal={IEEE Signal Processing Letters},
   year={2025}
 }
 ```
