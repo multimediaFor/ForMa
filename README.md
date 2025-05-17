@@ -32,7 +32,7 @@ If you use this code for your research, please cite our paper
 ```
 @article{guo2025light,
   title={A Lightweight and Effective Image Tampering Localization Network with Vision Mamba},
-  author={Guo, Kun, et al.},
+  author={Guo, Kun and Cao Gang and Lou, Zijie and Huang, Xianglin and Liu, Jiaoyun},
   journal={IEEE Signal Processing Letters},
   year={2025}
 }
