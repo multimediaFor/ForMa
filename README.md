@@ -21,7 +21,7 @@ python train.py
 ```
 
 For example to test:
-download [ForMa.pth](https://pan.baidu.com/s/1A8DrM4KD5iz5bKFAN5XFdw?pwd=1234) and place it in the `weights/` directory. 
+download ForMa_weights.pth form [baidu netdisk](https://pan.baidu.com/s/1A8DrM4KD5iz5bKFAN5XFdw?pwd=1234) or [123pan](https://www.123684.com/s/2pf9-z9NHv) and place it in the `weights/` directory. 
 ```
 python generate_npy.py
 python test.py 
