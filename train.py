@@ -51,7 +51,7 @@ class MyVmamba(nn.Module):
                  net_weight="",continue_=False):
         super(MyVmamba, self).__init__()
         self.cur_net = Forensic_Vmamba().to(device)
-        if continue_ == True:
+        if continue_ == False:
             self.epoch_iteration_1w = 0
             self.count = 0
             self.lr = 1e-4
