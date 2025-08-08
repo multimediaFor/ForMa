@@ -1,5 +1,5 @@
 ## A Lightweight and Effective Image Tampering Localization Network with Vision Mamba
-An official implementation code for paper "[A Lightweight and Effective Image Tampering Localization Network with Vision Mamba](https://ieeexplore.ieee.org/abstract/document/11004130)". This repo provide codes and trained weights.
+An official implementation code for paper "[A Lightweight and Effective Image Tampering Localization Network with Vision Mamba](https://ieeexplore.ieee.org/abstract/document/11004130)". This repo provides code and trained weights.
 ## Framework
 <p align='center'>  
   <img src='./ForMa_Network.png' width='900'/>
